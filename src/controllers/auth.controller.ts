@@ -42,6 +42,11 @@ export const registerUser = async(req:Request, res:Response): Promise<void> =>{
 
         // generate token 
         const token = generateToken(user)
+
+        res.status(201).json({
+            success: true,
+            token
+        })
         
     } catch (error) {
         console.log('Error', error)
