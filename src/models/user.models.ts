@@ -1,5 +1,5 @@
 import { Schema, model, Types } from "mongoose";
-import { UserProps } from "../types";
+import { UserProps } from "../../types";
 
 const UserSchema = new Schema<UserProps>({
     email: { 
