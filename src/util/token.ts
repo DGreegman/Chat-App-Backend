@@ -1,4 +1,4 @@
-import { UserProps } from "../../types";
+import { UserProps } from "../types";
 import jwt from 'jsonwebtoken'
 
 export const generateToken = (user: UserProps) =>{
